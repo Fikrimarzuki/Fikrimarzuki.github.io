@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Slabo 27px";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Slabo 27px"), local("Slabo27px-Regular"),
+    url(https://fonts.gstatic.com/s/slabo27px/v6/mFT0WbgBwKPR_Z4hGN2qgx8D1Q.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Slabo 27px";
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      to right,
+      rgba(62, 81, 81, 0.6),
+      rgba(62, 81, 81, 0.3)
+    ),
+    url("./images/background.jpg");
+  box-sizing: border-box;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******* HEADER *********/
+header {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  top: 5px;
+  margin-top: -15px;
+  padding-top: 15px;
+  position: fixed;
+  z-index: 100;
+}
+
+ul li {
+  list-style-type: none;
+  color: white;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul:hover li:hover {
+  color: blue;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul a {
+  color: white;
+}
+
+ul a:hover {
+  color: blue;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 5;
+}
+
+.dropdown:hover {
+  color: blue;
+}
+
+.dropdown-item {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.dropdown-item li {
+  margin-bottom: 5px;
+}
+
+.dropdown:hover .dropdown-item {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  padding: 10px;
+  background-color: black;
+  width: 70px;
+}
+
+/******** MAIN SECTION ********/
+main {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+section {
+  display: flex;
+}
+
+.article-content {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 2.5px 0 2.5px 20px;  
+    margin: 10px 0px;
+    font-size: medium;
+}
+
+.article-content:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 120px;
+    font-size: large;
+}
+
+article {
+  justify-content: flex-start;
+  margin-right: 20px;
+  max-width: 70%;
+  min-width: 70%;
+  max-height: 470px;
+  min-height: 470px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.course-index {
+  margin-top: 10px;
+}
+
+.course-index:hover {
+  outline: 2px solid rgba(33, 21, 78, 0.2);
+}
+
+aside {
+  justify-content: flex-end;
+  min-width: 20%;
+  max-width: 20%;
+  margin-left: 20px;
+  max-height: 470px;
+  min-height: 470px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  color: white;
+}
+
+.details {
+  font-size: medium;
+  margin: 25px 20px 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05)
+}
+
+#contact, #account {
+  margin-left: 15px;
+  max-width: 94%;
+  min-width: 94%;
+  max-height: 470px;
+  min-height: 470px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 25px;
+
+}
+
+#contact form button {
+  height: 30px;
+  width: 150px;
+}
+
+#account {
+  font-size: 20px;
+}
+
+#account form div {
+  margin: auto;
+  height: 80px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+#account form button {
+  height: 30px;
+  width: 100px;
+}
+/******** FOOTER *********/
+footer {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  margin-top: -15px;
+  padding-top: 8px;
+  position: fixed;
+  top: 648px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
